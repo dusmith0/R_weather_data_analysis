@@ -97,7 +97,7 @@ save.image("C:/Users/dustin.smith/Documents/Codes/R/R-Path Files/HW06.RData")
 
 #D The summary function indicated that the y-intercept hit at 99.9845025
 
-#E College Station was, in general, living within the top 75 percentile of the heat index. Usually living just above the 3rd Quartile. There were 22 days where College Station 
+#E College Station was, in general, living within the top 75 percentile of the heat index. Usually living just above the 3rd Quarter. There were 22 days where College Station 
 #ranked in the top 25% of hottest cities in Texas. On July 10, it appears that College Station was the hottest city in Texas. College Station also only dropped in the bottom 50% of 
 #hottest cities 3 times, with one being on the median value. 
 

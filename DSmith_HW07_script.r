@@ -11,7 +11,7 @@ objects()
 rm(list=ls())
 objects()
 
-#1 Load the pervious workspace
+#1 Load the previous work space
 load("C:/Users/dustin.smith/Documents/Codes/R/R-Path Files/HW06.RData")
 ls()
 

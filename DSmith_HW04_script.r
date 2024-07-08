@@ -11,9 +11,6 @@ objects()
 rm(list=ls()) ; objects()
 search()
 
-### Finding a function to preform sequence generation
-#??SequenceGeneration
-    #seq(from = #, to = #, by = ((to-from)/(length.out-1)))
 
 ### Create an output path for the script, and set the appropriate directory.
 setwd("C:/Users/dustin.smith/Documents/Codes/R/R-Path Files")

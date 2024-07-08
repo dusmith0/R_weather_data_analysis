@@ -2,7 +2,7 @@
 ### C:\Users\dustin.smith\Documents\Codes\R\Stat 604
 ### Created by, Dustin Smith
 ### Creation Date: 2023-01-29 15:15
-### Purpose: To complete HW05. To import various files, edit them as data frames and count differen pieces of data in each data frame.  
+### Purpose: To complete HW05. To import various files, edit them as data frames and count different pieces of data in each data frame.  
 ### Last executed: "2023-01-31 16:33:36 CST"
 Sys.time()
 
@@ -14,14 +14,14 @@ objects()
 setwd("C:/Users/dustin.smith/Documents/Codes/R/R-Path Files")
 dir()
 
-#load and evaluate the climate .rdata workspace
+#load and evaluate the climate .rdata work space
 load("climate.RData") #fill path is C:/Users/dustin.smith/Documents/Codes/R/R-Path Files/climate.RData
 search()
 objects()
 str(july21)
 
 #Append a "Day" Column to the end of the df, then display the first 15 rows of data.
-july21$DAY <- c(substr(july21$DATE,9,10)) #I think I can just use this line instead. I had four other lines that also worked, but seemed excessibly long.
+july21$DAY <- c(substr(july21$DATE,9,10)) #I think I can just use this line instead. I had four other lines that also worked, but seemed excessively long.
 july21[1:15,]
 
 #Counting the number of 100+ Days
@@ -83,24 +83,24 @@ summary(DailyTempSwing$TEMPSWING)
 DailyTempSwing[1:15,]
 
 
-#Remove the MDF from the data frame, and clean up the workspace
+#Remove the MDF from the data frame, and clean up the work space
 detach(MDF)
 objects()
 rm(july21,elevation)
 
-#Save the workspace
+#Save the work space
 save.image("C:/Users/dustin.smith/Documents/Codes/R/R-Path Files/HW05.RData")
 
 ### Questions
-#A There were 407 days above 100 degrees in july 2022, whereas there were 5995 in July 2021. That is a difference of 5588. That is a huge difference. 
+#A There were 407 days above 100 degrees in July 2022, whereas there were 5995 in July 2021. That is a difference of 5588. That is a huge difference. 
 
-#B It seemed to delete or ignore the redundent row. I did not see a differnece in the script on line 65 when the index of [-2] was used and when it was not. Both seemed to return a data.frame without the
+#B It seemed to delete or ignore the redundant row. I did not see a difference in the script on line 65 when the index of [-2] was used and when it was not. Both seemed to return a data.frame without the
       #repeated column. 
 
-#C Attaching MDF or Matched Data Frame places the data for MDF into the workspace of R. Thus it enabled me to call on each part of the data.frame without renferecing the data.frame itself. 
-      #it allowed me to call on individual rows and columns in the for applications later. I actually had quite a bit of problems with the attach() fucntions. I had at first assumed that I needed to 
-      #attach each row and column individually, but I could not determine how to do this. After just trying the attach(MDF). I only learned that I did not need to attached them indviually when I begin playing with 
-      #the attached MDF in the workspace.
+#C Attaching MDF or Matched Data Frame places the data for MDF into the work space of R. Thus it enabled me to call on each part of the data.frame without referencing the data.frame itself. 
+      #it allowed me to call on individual rows and columns in the for applications later. I actually had quite a bit of problems with the attach() functions. I had at first assumed that I needed to 
+      #attach each row and column individually, but I could not determine how to do this. After just trying the attach(MDF). I only learned that I did not need to attached them individually when I begin playing with 
+      #the attached MDF in the work space.
 
 #D In July 2022 the three hottest days and stations are the following:
     #Score   Station       Date   Temp
@@ -108,6 +108,6 @@ save.image("C:/Users/dustin.smith/Documents/Codes/R/R-Path Files/HW05.RData")
     # 2   USW00013966   7/19/2022 115
     # 3   USR0000TMAA   7/19/2022 115
 
-    #In July 2021 there was only one date that had the hottest day of the month. No ties. I re-ran my script on lines 50-53 for july21. It should be returnded back to the original.
+    #In July 2021 there was only one date that had the hottest day of the month. No ties. I re-ran my script on lines 50-53 for July21. It should be returned back to the original.
     #Score   Station       Date     Temp
     #1     USC00417624  2021-07-25  111

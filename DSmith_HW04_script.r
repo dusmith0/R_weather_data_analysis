@@ -15,19 +15,19 @@ search()
 #??SequenceGeneration
     #seq(from = #, to = #, by = ((to-from)/(length.out-1)))
 
-### Create an output path for the script, and set the appopriate directory.
+### Create an output path for the script, and set the appropriate directory.
 setwd("C:/Users/dustin.smith/Documents/Codes/R/R-Path Files")
 dir() #To check on the files already there
 sink("DSmith_HW04_script.csv",split=T)
 
 ### Create First Sequence named FSeq
-(FSeq <- seq.int(4,80,4))  #FSeq = First sequence in the assingment 
+(FSeq <- seq.int(4,80,4))  #FSeq = First sequence in the assignment 
 mode(FSeq)
 class(FSeq)
 print(FSeq[c(2,4:6)])  #I could ignore the print() but I like it from python
 
 ### Create a Second Sequence named SSeq
-(SSeq <- seq.int(.5,20,.5))  #SSeq = Second sequence in the assingment 
+(SSeq <- seq.int(.5,20,.5))  #SSeq = Second sequence in the assignment 
 mode(SSeq)
 class(SSeq)
 print(SSeq[c(1:10)])
@@ -64,13 +64,3 @@ playoffs[playoffs == 2]
 
 #This will close the output file after we are finished. 
 sink()
-
-##### Answers to the HW04 Questions
-#A) Seven packages are loaded in my R Session. Nine objects are given, but two appear to not be packages.
-#B) The mode of FSeq in step 4 is "numeric". 
-#C) The first vector's (FSeq) values will be placed into the martix's first column,
-    #;where each value is being added into row section of the matrix
-#D) The summaries of playoffs in step 8 and playoffteams in step 9 are very different. The second (teams) is a vector of characters;
-    #whereas the frist (playoffs) is a vector of numerical values. Therefor, the summary in step 8 produced the 'five number summary' of statistical values, as well as the mean.;
-    # The second (teams) summary only provided the Class, Mode, and Length of the vector. 
-#E) The teams are the "Wild" and "Capitals"

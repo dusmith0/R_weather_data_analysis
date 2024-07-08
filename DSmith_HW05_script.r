@@ -2,7 +2,7 @@
 ### C:\Users\dustin.smith\Documents\Codes\R\Stat 604
 ### Created by, Dustin Smith
 ### Creation Date: 2023-01-29 15:15
-### Purpose: To complete HW05. To inport various files, edit them as data frames and count differen pieces of data in each data frame.  
+### Purpose: To complete HW05. To import various files, edit them as data frames and count differen pieces of data in each data frame.  
 ### Last executed: "2023-01-31 16:33:36 CST"
 Sys.time()
 
@@ -92,7 +92,7 @@ rm(july21,elevation)
 save.image("C:/Users/dustin.smith/Documents/Codes/R/R-Path Files/HW05.RData")
 
 ### Questions
-#A There were 407 days above 100 dgrees in july 2022, whereas there were 5995 in July 2021. That is a difference of 5588. That is a huge difference. 
+#A There were 407 days above 100 degrees in july 2022, whereas there were 5995 in July 2021. That is a difference of 5588. That is a huge difference. 
 
 #B It seemed to delete or ignore the redundent row. I did not see a differnece in the script on line 65 when the index of [-2] was used and when it was not. Both seemed to return a data.frame without the
       #repeated column. 
